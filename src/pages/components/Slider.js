@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const images = ['Image1.jpg', 'Image2.jpg', 'Image3.jpg', 'Image4.jpg' ,'image5.jpeg' , 'image6.jpg',
+const images = ['image1.jpg', 'image2.jpg', 'image3.jpg', 'image4.jpg' ,'image5.jpeg' , 'image6.jpg',
 'image7.jpg', 'image8.jpg' ,'image9.jpg'];
 
 const ImageSlider = () => {
@@ -23,7 +23,7 @@ const ImageSlider = () => {
       <Slider {...settings} className='shadow-lg '>
         {images.map((image, index) => (
           <div key={index} className=''>
-            <img className='w-full md:h-[60vh] h-[35vh] rounded-2xl' src={image} alt={`Image ${index + 1}`} />
+            <img className='w-full md:h-[60vh] h-[35vh] rounded-2xl' src={image} alt={`image ${index + 1}`} />
           </div>
         ))}
       </Slider>
